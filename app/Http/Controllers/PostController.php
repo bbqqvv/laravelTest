@@ -10,11 +10,18 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
+
     public function index()
     {
         $name  = 'Vanbui';
         $age = 20;
-        return view('posts.index', ['username' => $name, 'age' => $age]);
+        $posts = [
+            'post 1',
+            'post 2',
+            'post 3',
+            'post 4',
+        ];
+        return view('posts.index', ['username' => $name, 'age' => $age, 'posts' => $posts]);
     }
 
     /**
@@ -22,7 +29,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -30,23 +37,22 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Post $post)
+    public function show()
     {
-        //
+        return view('posts.show');
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Post $post)
+    public function edit()
     {
-        //
+        return view('posts.edit');
     }
 
     /**
