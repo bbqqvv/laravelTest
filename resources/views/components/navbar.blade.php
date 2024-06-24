@@ -20,9 +20,10 @@
 
                 <x-navbar-link href="/" :active="request() ->is('/')">Home</x-navbar-link>
                 <x-navbar-link href="/posts" :active="request() ->is('posts')">Posts</x-navbar-link>
+                <x-navbar-link href="/posts/create" :active="request() ->is('create')">Create</x-navbar-link>
 
+            
             </ul>
-
         </div>
     </div>
 </nav>

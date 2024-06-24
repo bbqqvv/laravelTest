@@ -10,11 +10,12 @@
 
 </head>
 
-<body>
+<body class="bg-slate-100 dark:bg-slate-900">
     <x-navbar />
 
     <div class="max-w-6xl mx-auto">
-        {{ $slot }}
+    {{ $slot }}
+
     </div>
 </body>
 
